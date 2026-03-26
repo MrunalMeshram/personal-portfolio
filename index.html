@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrunal Meshram | Software &amp; Data Engineer</title>
+    <meta name="description" content="Portfolio of Mrunal Meshram - Software Engineer, Data Engineer, and AI practitioner with 5+ years of experience.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">MM<span class="logo-dot">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">AVAILABLE FOR WORK</div>
+            <h1 class="hero-name">
+                <span class="hero-line">Mrunal</span>
+                <span class="hero-line hero-line-outline">Meshram</span>
+            </h1>
+            <div class="hero-role-wrapper">
+                <span class="hero-role-text" id="roleText"></span>
+                <span class="hero-cursor"></span>
+            </div>
+            <p class="hero-tagline">Building scalable systems, intelligent pipelines, and data-driven solutions across fintech &amp; enterprise environments.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Talk</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#experience" class="btn btn-ghost">View My Work</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/mrunal-meshram/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="mailto:meshram.mdm@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">01</span>About Me</h2>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <img src="profile.png" alt="Mrunal Meshram" class="about-image">
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a <strong>Software &amp; Data Engineer</strong> with over <strong>5 years of experience</strong> building scalable backend systems, data pipelines, and intelligent solutions across fintech, payments, and enterprise environments.</p>
+                    <p>My work spans the full data lifecycle &mdash; from designing <strong>ETL/ELT pipelines</strong> and optimizing SQL-heavy workloads, to developing <strong>REST APIs</strong>, integrating <strong>AI/ML components</strong>, and building interactive <strong>BI dashboards</strong> that drive business decisions.</p>
+                    <p>I've worked with technologies like <strong>Python, Java, SQL, Azure, AWS, Databricks, Power BI</strong>, and modern AI frameworks like <strong>LangChain and LLMs</strong>. I'm passionate about turning complex data into clear, actionable insights and building systems that are reliable, performant, and maintainable.</p>
+                    <p>Currently based in <strong>Dublin, Ireland</strong>, I hold a <strong>Master's in Artificial Intelligence</strong> from National College of Ireland and I'm always looking for challenging problems at the intersection of software engineering, data, and AI.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Years Experience</span></div>
+                    <div class="stat-item"><span class="stat-number">6+</span><span class="stat-label">Companies</span></div>
+                    <div class="stat-item"><span class="stat-number">8+</span><span class="stat-label">Projects Delivered</span></div>
+                    <div class="stat-item"><span class="stat-number">MSc</span><span class="stat-label">Artificial Intelligence</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">02</span>Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">T-SQL</span>
+                        <span class="skill-tag">Cypher</span>
+                        <span class="skill-tag">DAX</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Data &amp; Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">Neo4j</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">Redshift</span>
+                        <span class="skill-tag">SSIS</span>
+                        <span class="skill-tag">SSAS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Cloud &amp; Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure Data Factory</span>
+                        <span class="skill-tag">Azure Synapse</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">AWS Lambda</span>
+                        <span class="skill-tag">AWS Glue</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GCP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frameworks &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">JIRA</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">BI &amp; Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Looker</span>
+                        <span class="skill-tag">SSRS</span>
+                        <span class="skill-tag">TruBI</span>
+                        <span class="skill-tag">Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI &amp; Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">OpenAI Whisper</span>
+                        <span class="skill-tag">StyleGAN2</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Practices &amp; Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ETL/ELT</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">Data Governance</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">AML/KYC</span>
+                        <span class="skill-tag">RLS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">03</span>Professional Experience</h2>
+            <div class="timeline">
+
+                <!-- JDIT -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Software Engineer</h3>
+                                <h4 class="timeline-company">JDIT Software Solutions</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2025 &ndash; Present</span>
+                                <span class="timeline-location">Remote, Ireland</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Developed backend REST APIs using Python to support health insurance workflows including claims processing and policy data retrieval</li>
+                            <li>Built automation features that reduced manual effort in insurance data handling and validation processes</li>
+                            <li>Implemented LLM-based components for document processing and query automation within internal tools</li>
+                            <li>Integrated third-party and internal APIs for seamless data exchange across insurance systems</li>
+                            <li>Worked with LangChain to prototype AI-driven workflows for document understanding and task automation</li>
+                            <li>Optimized SQL queries and backend logic to improve response time and system efficiency</li>
+                            <li>Followed secure coding practices for handling sensitive insurance and customer data in an agile environment</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span><span>REST APIs</span><span>LangChain</span><span>LLMs</span><span>SQL</span><span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NCI -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">AI Researcher &amp; Developer</h3>
+                                <h4 class="timeline-company">National College of Ireland (MSc in AI)</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2024 &ndash; Feb 2025</span>
+                                <span class="timeline-location">Dublin, Ireland</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Expanded expertise in AI with a strong focus on real-world applications, scalable solutions, and emerging trends in Generative AI and autonomous agents</li>
+                            <li>Designed and developed research-driven projects using Large Language Models (LLMs) and modern AI frameworks</li>
+                            <li>Built AI-powered agent workflows and automation systems leveraging LLMs for task orchestration and decision-making</li>
+                            <li>Applied machine learning and deep learning techniques to build predictive and intelligent systems</li>
+                            <li>Explored and implemented agent-based architectures, including multi-step reasoning and tool integration</li>
+                            <li>Presented technical findings and project outcomes to academic and professional audiences</li>
+                            <li>Strengthened skills in data handling, model evaluation, prompt engineering, and performance optimization</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>LLMs</span><span>LangChain</span><span>Deep Learning</span><span>Python</span><span>NLP</span><span>RAG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urban Co-op -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Data Analyst (Internship)</h3>
+                                <h4 class="timeline-company">The Urban Co-op Wellness Hub</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2024 &ndash; May 2024</span>
+                                <span class="timeline-location">Dublin, Ireland</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Built Power BI dashboards analyzing 3+ years of operational data, improving demand planning accuracy by ~30%</li>
+                            <li>Automated SQL-based data refresh pipelines, reducing manual reporting effort by 25%</li>
+                            <li>Presented insights to non-technical stakeholders to inform operational decisions</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Power BI</span><span>SQL</span><span>Data Analysis</span><span>Stakeholder Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIS -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Software &amp; Data Engineer</h3>
+                                <h4 class="timeline-company">FIS (Contract)</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Sep 2023 &ndash; Jan 2024</span>
+                                <span class="timeline-location">Pune, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed and developed backend data processing workflows using Python and SQL, improving payment platform throughput by 22%</li>
+                            <li>Translated business and merchant requirements into scalable, production-ready data pipelines and services</li>
+                            <li>Built and optimized ETL systems processing millions of financial records, reducing manual processing by 60+ hours/month</li>
+                            <li>Designed scalable data models supporting BI reporting for risk and compliance teams, increasing reporting accuracy by 22%</li>
+                            <li>Modernized data ingestion from APIs and cloud storage into enterprise warehouses, enhancing data freshness and reliability</li>
+                            <li>Collaborated with DevSecOps and infrastructure teams to resolve database performance and security issues in high-availability systems</li>
+                            <li>Implemented CI/CD and version control best practices, streamlining deployment and maintaining code quality</li>
+                            <li>Built interactive Power BI dashboards using DAX for real-time payment anomaly monitoring, reducing false positives by 15%</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span><span>SQL</span><span>ETL</span><span>Power BI</span><span>DAX</span><span>Azure</span><span>CI/CD</span><span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fiserv -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Software &amp; Data Engineer</h3>
+                                <h4 class="timeline-company">Fiserv</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">May 2022 &ndash; Aug 2023</span>
+                                <span class="timeline-location">Pune, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed, developed, and maintained scalable software systems for high-volume payment and financial data processing</li>
+                            <li>Built end-to-end data pipelines using Python, SQL, and cloud technologies, improving system efficiency and reducing processing time by up to 40%</li>
+                            <li>Engineered data models and storage solutions supporting analytics, reporting, and real-time decision-making</li>
+                            <li>Integrated ML models for anomaly detection in payment processing, cutting false-positive fraud flags by 15% and saving $1.2M annually</li>
+                            <li>Automated data extraction workflows using Python, saving 20+ manual hours per week</li>
+                            <li>Created Power BI dashboards with DAX-driven business logic for merchant settlement reporting, accelerating reconciliation by 14%</li>
+                            <li>Designed SQL-based transaction monitoring rules integrating AML and KYC controls for regulatory compliance</li>
+                            <li>Optimized SQL queries and indexing strategies, improving transaction monitoring and reporting performance by 30%+</li>
+                            <li>Collaborated with cross-functional teams (DevSecOps, BI, Product) to design system architecture and align technical solutions with business goals</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span><span>Java</span><span>SQL Server</span><span>AWS</span><span>Databricks</span><span>Power BI</span><span>SSIS</span><span>Tableau</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datamatics -->
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Data &amp; BI Engineer</h3>
+                                <h4 class="timeline-company">Datamatics</h4>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Oct 2019 &ndash; May 2022</span>
+                                <span class="timeline-location">Mumbai, India</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Built and maintained ETL pipelines and SQL transformations supporting enterprise reporting and analytics systems</li>
+                            <li>Managed migration of on-prem legacy data to cloud architecture by building robust Python ETL pipelines</li>
+                            <li>Designed automated Power BI dashboards simplifying complex technical data for regional management teams</li>
+                            <li>Developed Python scripts for data extraction, validation, and API-based ingestion, enhancing pipeline consistency</li>
+                            <li>Optimized SQL workloads through query refactoring, indexing, and partitioning, improving performance by 25-35%</li>
+                            <li>Ran quantitative analysis on large-scale datasets to build forecasting models for 3-year strategic business plans</li>
+                            <li>Delivered 24/7 production support for ETL jobs, reducing recurring failures through preventive controls and monitoring</li>
+                            <li>Reduced query latency by 40% through advanced indexing and SQL optimization for enterprise applications</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>SQL Server</span><span>Python</span><span>SSIS</span><span>Power BI</span><span>Azure</span><span>ETL</span><span>T-SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">04</span>Education</h2>
+            <div class="education-grid">
+                <div class="education-card" data-aos>
+                    <div class="education-year">2024 &ndash; 2025</div>
+                    <div class="education-details">
+                        <h3>Master's in Artificial Intelligence</h3>
+                        <h4>National College of Ireland</h4>
+                        <span class="education-location">Dublin, Ireland</span>
+                    </div>
+                </div>
+                <div class="education-card" data-aos>
+                    <div class="education-year">2019</div>
+                    <div class="education-details">
+                        <h3>PG Diploma in Advanced Computing</h3>
+                        <h4>Centre for Development of Advanced Computing (CDAC)</h4>
+                        <span class="education-location">Grade-A Institute AIT YCP</span>
+                    </div>
+                </div>
+                <div class="education-card" data-aos>
+                    <div class="education-year">2014 &ndash; 2017</div>
+                    <div class="education-details">
+                        <h3>Bachelor's in Electronics Engineering</h3>
+                        <h4>MIT Academy of Engineering</h4>
+                        <span class="education-location">Pune, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">05</span>Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="data">Data Engineering</button>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-top">
+                        <span class="project-label">AI / ML</span>
+                        <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Neo4j-Powered Citation Network Link Prediction</h3>
+                    <p class="project-description">Built a GDS link-prediction pipeline leveraging graph algorithms (common neighbors, preferential attachment, triangle counts) achieving 82.2% speed-up. Trained Random Forest model natively (AUCPR 0.826 training, 0.801 testing). Hybrid Neo4j-Python workflow with 87.3% cache hit rate and 3.2x throughput improvement.</p>
+                    <div class="project-tech"><span>Neo4j</span><span>Cypher</span><span>Python</span><span>Py2neo</span><span>Random Forest</span><span>GDS</span></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-top">
+                        <span class="project-label">AI / ML</span>
+                        <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Gen-AI Hybrid Skin Disease Detection</h3>
+                    <p class="project-description">Developed a hybrid ML pipeline combining real and StyleGAN2-generated synthetic skin disease images. Fine-tuned EfficientNet models on enriched datasets, boosting accuracy and robustness. Evaluated using FID, LPIPS, ROC-AUC, Precision, Recall, and F1-Score metrics.</p>
+                    <div class="project-tech"><span>StyleGAN2</span><span>EfficientNet</span><span>Python</span><span>Deep Learning</span><span>Computer Vision</span></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-top">
+                        <span class="project-label">AI / ML</span>
+                        <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Audio-Based Chatbot with Real-Time Assistance</h3>
+                    <p class="project-description">Real-time voice-interactive chatbot using OpenAI Whisper (STT) and Coqui TTS with latency under 2 seconds. FastAPI microservices cutting latency by 45%. RAG pipeline combining FAISS and PostgreSQL improving relevance by 30%. Fine-tuned Llama model. Deployed via Django + Docker.</p>
+                    <div class="project-tech"><span>FastAPI</span><span>Whisper</span><span>FAISS</span><span>RAG</span><span>Llama</span><span>Docker</span><span>Django</span><span>PostgreSQL</span></div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-top">
+                        <span class="project-label">AI / ML</span>
+                        <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">Fine-Tuned NLP Model for College QA</h3>
+                    <p class="project-description">Fine-tuned Llama model on college-specific datasets for education domain queries achieving 85% accuracy. Custom dataset with augmentation techniques. Deployed on GCP with GPU instances supporting 100 concurrent users. 20% improvement over baseline models.</p>
+                    <div class="project-tech"><span>Llama</span><span>NLP</span><span>GCP</span><span>Fine-tuning</span><span>Python</span></div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-card-top">
+                        <span class="project-label">Data Engineering</span>
+                    </div>
+                    <h3 class="project-title">ICRA &mdash; Financial Data Platform</h3>
+                    <p class="project-description">Created database objects (tables, stored procedures, views, triggers, functions) with performance tuning. Developed T-SQL pivot/unpivot queries for efficient report analysis. Built SSIS packages for data load and TruBI dashboards.</p>
+                    <div class="project-tech"><span>SQL</span><span>T-SQL</span><span>SSIS</span><span>TruBI</span><span>Performance Tuning</span></div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-card-top">
+                        <span class="project-label">Data Engineering</span>
+                    </div>
+                    <h3 class="project-title">Vistra &mdash; Survey Data Platform</h3>
+                    <p class="project-description">Created stored procedures with business logic. Built SSIS packages for base and survey data load. Implemented TruBI reports. Conducted unit testing and UAT for data integration validation across source systems.</p>
+                    <div class="project-tech"><span>SQL</span><span>T-SQL</span><span>SSIS</span><span>TruBI</span><span>UAT</span></div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-card-top">
+                        <span class="project-label">Data Engineering</span>
+                    </div>
+                    <h3 class="project-title">Nielsen Brand Track &mdash; Analytics Pipeline</h3>
+                    <p class="project-description">Extensive SSIS work importing, exporting, and transforming data between linked servers. Created database objects using T-SQL in development and production environments. Survey data load utilities and analytics reports via TruBI and SSAS.</p>
+                    <div class="project-tech"><span>SQL</span><span>SSIS</span><span>SSAS</span><span>T-SQL</span><span>TruBI</span></div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-card-top">
+                        <span class="project-label">Full-Stack</span>
+                    </div>
+                    <h3 class="project-title">Online Auction System (CDAC)</h3>
+                    <p class="project-description">Developed a user-friendly online auctioning platform using .NET with product authentication, secure bidding server, and highly-scalable architecture supporting large numbers of concurrent bidders in active auctions.</p>
+                    <div class="project-tech"><span>.NET</span><span>SQL Server</span><span>Web Development</span><span>Scalable Architecture</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">06</span>Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">I'm currently open to new opportunities and always happy to connect. Whether you have a role in mind, a project to collaborate on, or just want to say hello &mdash; feel free to reach out!</p>
+                <div class="contact-grid">
+                    <a href="mailto:meshram.mdm@gmail.com" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">meshram.mdm@gmail.com</span>
+                    </a>
+                    <a href="tel:+353874760886" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+353 874 760 886</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mrunal-meshram/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">mrunal-meshram</span>
+                    </a>
+                    <a href="https://github.com/MrunalMeshram" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">MrunalMeshram</span>
+                    </a>
+                    <div class="contact-card contact-card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Dublin, Ireland</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Bubble -->
+    <button class="theme-bubble" id="themeBubble" aria-label="Toggle light/dark theme">
+        <svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed &amp; Built by Mrunal Meshram &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
